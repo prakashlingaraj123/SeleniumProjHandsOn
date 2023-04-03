@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-28T04:46:54 IST" name="Suite" finished-at="2023-03-28T04:48:11 IST" duration-ms="77576">
+    <groups>
+      <group name="ProdCat">
+        <method signature="ProductCatalogTest.filterTest()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" name="filterTest" class="selFramework.frameworkdev.Tests.ProductCatalogTest"/>
+      </group> <!-- ProdCat -->
+      <group name="SubOrder">
+        <method signature="SubmitOrderTest.placeOrder(java.lang.String)[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" name="placeOrder" class="selFramework.frameworkdev.Tests.SubmitOrderTest"/>
+      </group> <!-- SubOrder -->
+    </groups>
+    <test started-at="2023-03-28T04:46:54 IST" name="ProductCatalogTest" finished-at="2023-03-28T04:47:20 IST" duration-ms="26340">
+      <class name="selFramework.frameworkdev.Tests.ProductCatalogTest">
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" started-at="2023-03-28T04:46:54 IST" name="loginApplication" finished-at="2023-03-28T04:47:09 IST" duration-ms="15552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="filterTest()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" started-at="2023-03-28T04:47:09 IST" name="filterTest" finished-at="2023-03-28T04:47:10 IST" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" started-at="2023-03-28T04:47:10 IST" name="afterTest" finished-at="2023-03-28T04:47:12 IST" duration-ms="1446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" started-at="2023-03-28T04:47:12 IST" name="loginApplication" finished-at="2023-03-28T04:47:18 IST" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="showingResultsTest()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" started-at="2023-03-28T04:47:18 IST" name="showingResultsTest" finished-at="2023-03-28T04:47:19 IST" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showingResultsTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:selFramework.frameworkdev.Tests.ProductCatalogTest@10d307f1]" started-at="2023-03-28T04:47:19 IST" name="afterTest" finished-at="2023-03-28T04:47:20 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- selFramework.frameworkdev.Tests.ProductCatalogTest -->
+    </test> <!-- ProductCatalogTest -->
+    <test started-at="2023-03-28T04:46:54 IST" name="SubmitOrder" finished-at="2023-03-28T04:48:11 IST" duration-ms="77576">
+      <class name="selFramework.frameworkdev.Tests.SubmitOrderTest">
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:46:54 IST" name="loginApplication" finished-at="2023-03-28T04:47:11 IST" duration-ms="16931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="placeOrder(java.lang.String)[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:47:11 IST" name="placeOrder" data-provider="dataset" finished-at="2023-03-28T04:47:34 IST" duration-ms="23208" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .itemNumber (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\pli6cob\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55022/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9a6211a677aaabc551651c8bf5a5aa2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .itemNumber (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\pli6cob\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55022/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9a6211a677aaabc551651c8bf5a5aa2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at selFramework.frameworkdev.AbstractComponets.AbstractComponents.waitForElementVisibility(AbstractComponents.java:36)
+at selFramework.frameworkdev.AbstractComponets.AbstractComponents.goToCart(AbstractComponents.java:53)
+at selFramework.frameworkdev.Tests.SubmitOrderTest.placeOrder(SubmitOrderTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:47:34 IST" name="afterTest" finished-at="2023-03-28T04:47:35 IST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:47:35 IST" name="loginApplication" finished-at="2023-03-28T04:47:41 IST" duration-ms="6336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="placeOrder(java.lang.String)[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:47:41 IST" name="placeOrder" data-provider="dataset" finished-at="2023-03-28T04:48:11 IST" duration-ms="29716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:48:11 IST" name="afterTest" finished-at="2023-03-28T04:48:11 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method signature="orderValidation()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff]" started-at="2023-03-28T04:48:11 IST" name="orderValidation" finished-at="2023-03-28T04:48:11 IST" depends-on-methods="selFramework.frameworkdev.Tests.SubmitOrderTest.placeOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SubmitOrderTest.orderValidation()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SubmitOrderTest.orderValidation()[pri:0, instance:selFramework.frameworkdev.Tests.SubmitOrderTest@1b6e1eff] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderValidation -->
+      </class> <!-- selFramework.frameworkdev.Tests.SubmitOrderTest -->
+    </test> <!-- SubmitOrder -->
+  </suite> <!-- Suite -->
+</testng-results>
